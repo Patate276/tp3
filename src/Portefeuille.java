@@ -20,11 +20,11 @@ public class Portefeuille {
    */
   public boolean transfertDevise (Portefeuille destination, double montantJetons){
       
-	   if (montantJetons <= this.montant)
+	   if (montantJetons <= this.montant && this.monnaie.getNom() == destination.monnaie.getNom())
 	   {
-		   
-			destination.montant+= montantJetons;
-			this.montant -= montantJetons;
+			destination.montant += montantJetons;
+			this.montant        -= montantJetons;
+
 			return true;
 	   }
 	  
@@ -41,7 +41,7 @@ public class Portefeuille {
   public boolean achatDevise (double montantEuros){
 	if ( montantEuros >= 0 )
 	{
-		this.montant = montantEuros/this.monnaie.getValeurDeJeton();
+		this.montant += montantEuros/this.monnaie.getValeurDeJeton();
 		
 		return true;
 	}

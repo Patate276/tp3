@@ -50,7 +50,7 @@ public class CryptoMarche
 		double somme = 0;
 		for (Portefeuille p : portefeuilles)
 			if ( p!= null && p.getMonnaie() == monnaie)
-				somme += p.getMontant();
+				somme += p.getMontant() * p.getMonnaie().getValeurDeJeton();
 
 		return somme;
 
