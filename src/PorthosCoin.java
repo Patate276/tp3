@@ -1,5 +1,5 @@
-public class AramisCoin extends Cryptomonnaie{
-    public AramisCoin(){
-        super("ARA", 1000);
+public class PorthosCoin extends Cryptomonnaie{
+    public PorthosCoin(){
+        super("Porthos", 1000);
     }
 }
