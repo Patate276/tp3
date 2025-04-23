@@ -1,13 +1,57 @@
 # Tp3
-<<<<<<< HEAD
-<<<<<<< HEAD
-Nous avons maintenant créé une nouvelle branche de test
-=======
-c le Tpd
+ON commence a accepter l'invitation de collaboration dans notre boite mail. 
 
-<<<<<<< HEAD
-Nous avons maintenant crée une nouvelle branche de test
->>>>>>> e6c0b8bdadc83899edf094cf88a04ca3f22aba29
-=======
-ajout de la branche test
->>>>>>> test
+
+
+dans courseGIT, on fait la commande git clone git@github.com:Patate276/tp3.git
+ce qui permet de cloner le fichier tp3 dans le repertoire locale. 
+
+pour synchronisez les fichiers distant, on utolise alors les commandes : 
+
+-git add src/Cryptomonaie.java
+-git add README.md
+-git commit -m " ajout distant du fichier  Cryptomonaie et src "
+-git push
+
+on a donc nos 2 fichiers déposés dans le fichiers distants
+on effectue ensuite : git pull
+
+on a donc bien tout synchronisé. 
+
+
+Etant Porthos, on travaillera sur Portefeuille.java
+
+Une fois les erreurs corriger, on creer une branche PorthosCoin,  avec git checkout -b test
+
+on creer un nouveau fichier avec New-Item test.txt ( Powershell )
+on ajoute alors ce fichier dans git avec git add test.txt
+
+étant donné que l'on change de branche, le fichier test.txt n'est plus visible, car il n'appartient pas a cette branche. 
+
+
+
+
+Effectuer un git add README.md puis un git commit -m "nouveau commit sur la branche principale"
+
+git log --graph --oneline --all --decorate --topo-order
+
+
+avec git checkout main, on est alors dans la branche principale. 
+
+on effectue alors git merge test, qui nous permet de fusionner la branche main et la branche test. 
+
+
+ainsi, on peut désoramis retrouver le test.txt si l'on effectue ls. 
+
+
+On creer enssuite la branche PorthosCoin. 
+git checkout -b PorthosCoin
+
+on fusionne ensuite cette branche au main : git merge main
+
+
+
+
+
+
+
