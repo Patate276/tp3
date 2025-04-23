@@ -52,6 +52,7 @@ on fusionne ensuite cette branche au main : git merge main
 
 
 
+![image_a_integrer](https://github.com/user-attachments/assets/fe91d416-3142-4789-b6e9-c1564ff6fc29)
 
 
 
